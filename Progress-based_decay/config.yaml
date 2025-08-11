@@ -1,0 +1,17 @@
+seed: 42
+env:
+  name: "SuperMarioBros-1-1-v2"
+  skip_frames: 4
+  resize_shape: [128, 128]
+  num_envs: 8
+  
+training:
+  total_timesteps: 1e7
+  learning_rate: 3e-4
+  n_steps: 512
+  batch_size: 512
+  n_epochs: 6
+  ent_coef: 0.1
+  gamma: 0.96
+  target_kl: 0.10
+  clip_range: 0.2
